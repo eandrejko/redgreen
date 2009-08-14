@@ -5,8 +5,8 @@ require 'test/unit/ui/console/testrunner'
 module RedGreen
   module Color
     # 37 = white, 30 = black
-    FG_COLORS = { :for_clear => 37, :for_red => 37, :for_green => 37, :for_yellow => 30}   
-    BG_COLORS = { :clear => 0, :red => 41, :green => 42, :yellow => 43 }
+    FG_COLORS = { :for_clear => 37, :for_red => 41, :for_green => 42, :for_yellow => 43}   
+    BG_COLORS = { :clear => 0, :red => 0, :green => 0, :yellow => 0 }
     def self.method_missing(color_name, *args)
       color(color_name) + args.first + color(:clear) 
     end
